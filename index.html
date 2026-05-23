@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nagaraju's 90-Day Income Acceleration Plan: A premium technical roadmap to build AI Automation systems, scalable backends, and secure ₹50,000 monthly income outside salary.">
+    <title>MASTER PLAN FOR MAKING MONEY — 90-Day Income Acceleration</title>
+    
+    <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        /* --- CSS CUSTOM PROPERTIES (DESIGN SYSTEM) --- */
+        :root {
+            --bg-dark: #05070f;
+            --bg-card: rgba(13, 20, 38, 0.45);
+            --bg-card-hover: rgba(20, 30, 58, 0.65);
+            --border-color: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(0, 210, 255, 0.25);
+            
+            --accent-blue: #00d2ff;
+            --accent-blue-rgb: 0, 210, 255;
+            --accent-blue-glow: rgba(0, 210, 255, 0.15);
+            
+            --accent-gold: #ffc107;
+            --accent-gold-rgb: 255, 193, 7;
+            --accent-gold-glow: rgba(255, 193, 7, 0.2);
+            
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            
+            --shadow-glow: 0 0 25px rgba(0, 210, 255, 0.12);
+            --shadow-gold-glow: 0 0 25px rgba(255, 193, 7, 0.12);
+            --transition-speed: 0.3s;
+        }
+
+        /* --- GLOBAL BASICS --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            
+            /* High-Tech Background: Grid Overlay + Ambient Radial Glows */
+            background-image: 
+                radial-gradient(circle at 10% 15%, rgba(0, 210, 255, 0.07) 0%, transparent 35%),
+                radial-gradient(circle at 90% 75%, rgba(255, 184, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.03) 0%, transparent 50%),
+                linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 45px 45px, 45px 45px;
+            background-attachment: fixed;
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color var(--transition-speed) ease;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 210, 255, 0.15);
+            border-radius: 5px;
+            border: 2px solid var(--bg-dark);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 210, 255, 0.35);
+        }
+
+        /* --- GLASS CARD COMPONENT --- */
+        .glass-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            padding: 2.5rem;
+            transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-hover);
+            background: var(--bg-card-hover);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* Glowing Dot Overlay */
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(800px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(0, 210, 255, 0.06), transparent 40%);
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* --- COMMON STYLES --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 8rem 0;
+            position: relative;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--text-primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title span {
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-blue) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* --- SCROLL REVEAL ANIMATIONS --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 { transition-delay: 0.15s; }
+        .delay-2 { transition-delay: 0.3s; }
+        .delay-3 { transition-delay: 0.45s; }
+
+        /* --- HEADER & GLASSMORPHIC NAVBAR --- */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(5, 7, 15, 0.65);
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            padding: 0.75rem 0;
+            background: rgba(5, 7, 15, 0.85);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .logo span {
+            color: var(--accent-blue);
+        }
+
+        .logo-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-blue);
+            display: inline-block;
+            animation: pulse-glow 2s infinite alternate;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-blue);
+            transition: width var(--transition-speed) ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-primary);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            z-index: 110;
+        }
+
+        /* --- HERO SECTION --- */
+        #hero {
+            padding: 12rem 0 8rem 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-glow {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vw;
+            height: 50vw;
+            max-width: 600px;
+            background: radial-gradient(circle, rgba(0, 210, 255, 0.08) 0%, transparent 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .prepared-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: rgba(255, 193, 7, 0.06);
+            border: 1px solid rgba(255, 193, 7, 0.25);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: var(--accent-gold);
+            margin-bottom: 2rem;
+            box-shadow: 0 0 15px rgba(255, 193, 7, 0.05);
+            text-transform: uppercase;
+        }
+
+        .prepared-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--accent-gold);
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(135deg, #ffffff 40%, #e2e8f0 70%, var(--accent-blue) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            letter-spacing: -0.01em;
+        }
+
+        .hero-subtitle strong {
+            color: var(--accent-gold);
+            font-weight: 700;
+            text-shadow: 0 0 15px rgba(255, 193, 7, 0.15);
+        }
+
+        .focus-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .focus-pill {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .focus-pill i {
+            color: var(--accent-blue);
+            width: 16px;
+            height: 16px;
+        }
+
+        .focus-pill:hover {
+            background: rgba(0, 210, 255, 0.05);
+            border-color: rgba(0, 210, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, var(--accent-blue) 0%, #0070F3 100%);
+            color: #000000;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 1.1rem 2.5rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0, 210, 255, 0.25);
+            transition: all var(--transition-speed) cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        .btn-cta::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border-radius: 50px;
+            border: 1px solid var(--accent-blue);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 210, 255, 0.45);
+            color: #ffffff;
+        }
+
+        .btn-cta:hover::after {
+            opacity: 1;
+            transform: scale(1.02);
+        }
+
+        /* --- EXECUTIVE SUMMARY --- */
+        .summary-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .summary-intro {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .summary-intro span {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .pillar-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .pillar-icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(0, 210, 255, 0.08);
+            border: 1px solid rgba(0, 210, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-blue);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .pillar-card:hover .pillar-icon-box {
+            background: var(--accent-blue);
+            color: #000;
+            box-shadow: 0 0 15px var(--accent-blue);
+            transform: scale(1.05);
+        }
+
+        .pillar-card h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .pillar-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* --- STRATEGIC POSITIONING --- */
+        #positioning {
+            background: rgba(5, 7, 15, 0.4);
+        }
+
+        .identity-banner {
+            background: linear-gradient(135deg, rgba(13, 20, 38, 0.7) 0%, rgba(5, 7, 15, 0.9) 100%);
+            border: 1px solid rgba(0, 210, 255, 0.15);
+            border-radius: 24px;
+            padding: 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .identity-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-blue), transparent);
+        }
+
+        .identity-label {
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1.5rem;
+            display: block;
+            font-weight: 700;
+        }
+
+        .identity-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 3.5rem;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        .capabilities-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .capability-item {
+            flex: 1;
+            min-width: 180px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            transition: all var(--transition-speed) ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .capability-item i {
+            color: var(--accent-blue);
+            width: 28px;
+            height: 28px;
+        }
+
+        .capability-item span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        .capability-item:hover {
+            background: rgba(0, 210, 255, 0.04);
+            border-color: rgba(0, 210, 255, 0.2);
+            transform: translateY(-4px);
+        }
+
+        /* --- TECH STACK --- */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .tech-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .tech-column h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+
+        .tech-column.backend h3 i { color: var(--accent-blue); }
+        .tech-column.ai h3 i { color: var(--accent-gold); }
+        .tech-column.deployment h3 i { color: #10B981; }
+
+        .tech-badges-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 8px;
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .tech-badge:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: scale(1.03);
+        }
+
+        .tech-column.backend .tech-badge:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
+        .tech-column.ai .tech-badge:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+        .tech-column.deployment .tech-badge:hover { border-color: #10B981; color: #10B981; }
+
+        /* --- MONETIZATION STRATEGY --- */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .pricing-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .pricing-card.premium {
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            box-shadow: var(--shadow-gold-glow);
+            background: rgba(20, 25, 45, 0.55);
+        }
+
+        .pricing-card.premium:hover {
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 35px rgba(255, 193, 7, 0.25);
+        }
+
+        .tier-tag {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            color: var(--accent-gold);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            padding: 0.3rem 0.75rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+
+        .pricing-header {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .pricing-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .pricing-range {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: baseline;
+            gap: 0.25rem;
+        }
+
+        .pricing-card.premium .pricing-range {
+            color: var(--accent-gold);
+        }
+
+        .pricing-range span {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pricing-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            margin-bottom: 2.5rem;
+            flex-grow: 1;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .pricing-features li i {
+            width: 16px;
+            height: 16px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .pricing-features li.check i { color: #10B981; }
+        .pricing-features li.cross i { color: var(--text-muted); }
+
+        .btn-pricing {
+            width: 100%;
+            padding: 0.9rem;
+            border-radius: 8px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.02);
+            color: var(--text-primary);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .btn-pricing:hover {
+            background: rgba(0, 210, 255, 0.08);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .pricing-card.premium .btn-pricing {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 193, 7, 0.05) 100%);
+            border-color: rgba(255, 193, 7, 0.4);
+            color: var(--accent-gold);
+        }
+
+        .pricing-card.premium .btn-pricing:hover {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #d4af37 100%);
+            border-color: var(--accent-gold);
+            color: #000000;
+            box-shadow: 0 5px 20px rgba(255, 193, 7, 0.2);
+        }
+
+        /* --- 90-DAY ROADMAP (TIMELINE) --- */
+        .roadmap-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .roadmap-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            position: relative;
+        }
+
+        .roadmap-timeline::before {
+            content: '';
+            position: absolute;
+            top: 2.5rem;
+            bottom: 2.5rem;
+            left: 30px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent-blue) 0%, var(--accent-gold) 50%, #10B981 100%);
+            z-index: 0;
+        }
+
+        .phase-block {
+            position: relative;
+            z-index: 10;
+        }
+
+        .phase-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            cursor: pointer;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(16px);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .phase-header:hover {
+            border-color: var(--border-hover);
+            background: var(--bg-card-hover);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .phase-block.active .phase-header {
+            border-color: var(--accent-blue);
+        }
+
+        .phase-indicator {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--bg-dark);
+            border: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+            transition: all var(--transition-speed) ease;
+            position: relative;
+            z-index: 5;
+        }
+
+        .phase-block.phase-1 .phase-indicator { border-color: var(--accent-blue); color: var(--accent-blue); }
+        .phase-block.phase-2 .phase-indicator { border-color: var(--accent-gold); color: var(--accent-gold); }
+        .phase-block.phase-3 .phase-indicator { border-color: #10B981; color: #10B981; }
+
+        .phase-block.active .phase-indicator {
+            transform: scale(1.2);
+            box-shadow: 0 0 12px currentColor;
+        }
+
+        .phase-block.phase-1.active .phase-indicator { background: var(--accent-blue); color: #000; }
+        .phase-block.phase-2.active .phase-indicator { background: var(--accent-gold); color: #000; }
+        .phase-block.phase-3.active .phase-indicator { background: #10B981; color: #000; }
+
+        .phase-title-group {
+            flex-grow: 1;
+        }
+
+        .phase-meta {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-blue);
+            margin-bottom: 0.25rem;
+        }
+
+        .phase-block.phase-1 .phase-meta { color: var(--accent-blue); }
+        .phase-block.phase-2 .phase-meta { color: var(--accent-gold); }
+        .phase-block.phase-3 .phase-meta { color: #10B981; }
+
+        .phase-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .phase-chevron {
+            color: var(--text-muted);
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .phase-block.active .phase-chevron {
+            transform: rotate(180deg);
+            color: var(--text-primary);
+        }
+
+        .phase-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            padding-left: calc(30px + 2rem);
+        }
+
+        .phase-content-inner {
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .phase-objective {
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 3px solid var(--accent-blue);
+            padding: 1rem 1.5rem;
+            border-radius: 0 12px 12px 0;
+            font-size: 0.95rem;
+        }
+
+        .phase-block.phase-1 .phase-objective { border-left-color: var(--accent-blue); }
+        .phase-block.phase-2 .phase-objective { border-left-color: var(--accent-gold); }
+        .phase-block.phase-3 .phase-objective { border-left-color: #10B981; }
+
+        .phase-objective strong {
+            color: var(--text-primary);
+        }
+
+        .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .week-card {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .week-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .phase-block.phase-1 .week-title { color: var(--accent-blue); }
+        .phase-block.phase-2 .week-title { color: var(--accent-gold); }
+        .phase-block.phase-3 .week-title { color: #10B981; }
+
+        .week-tasks {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .week-tasks li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .week-tasks li i {
+            color: var(--accent-blue);
+            width: 14px;
+            height: 14px;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .phase-block.phase-1 .week-tasks li i { color: var(--accent-blue); }
+        .phase-block.phase-2 .week-tasks li i { color: var(--accent-gold); }
+        .phase-block.phase-3 .week-tasks li i { color: #10B981; }
+
+        /* --- REVENUE BREAKDOWN --- */
+        .revenue-wrapper {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .revenue-charts {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        .bar-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .bar-label-group {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .bar-label {
+            color: var(--text-primary);
+        }
+
+        .bar-value {
+            color: var(--accent-blue);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+        }
+
+        .bar-track {
+            height: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 6px;
+            width: 0%;
+            transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .bar-group:nth-child(1) .bar-fill { background: linear-gradient(90deg, #3b82f6, var(--accent-blue)); }
+        .bar-group:nth-child(2) .bar-fill { background: linear-gradient(90deg, #ec4899, #a855f7); }
+        .bar-group:nth-child(3) .bar-fill { background: linear-gradient(90deg, #f59e0b, var(--accent-gold)); }
+        .bar-group:nth-child(4) .bar-fill { background: linear-gradient(90deg, #10b981, #34d399); }
+
+        .revenue-card {
+            background: linear-gradient(135deg, rgba(13, 20, 38, 0.7) 0%, rgba(5, 7, 15, 0.9) 100%);
+            border: 1px solid rgba(255, 193, 7, 0.25);
+            box-shadow: var(--shadow-gold-glow);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .revenue-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        }
+
+        .revenue-card-title {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .revenue-card-amount {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px rgba(255, 193, 7, 0.2);
+        }
+
+        .revenue-card-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .revenue-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            color: #10B981;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* --- NON-NEGOTIABLE RULES --- */
+        .rules-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .rules-column {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            backdrop-filter: blur(16px);
+        }
+
+        .rules-column.must-do {
+            border-top: 3px solid #10B981;
+        }
+
+        .rules-column.must-avoid {
+            border-top: 3px solid #EF4444;
+        }
+
+        .rules-column h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .rules-column.must-do h3 i { color: #10B981; }
+        .rules-column.must-avoid h3 i { color: #EF4444; }
+
+        .rules-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .rules-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .rules-list li i {
+            margin-top: 3px;
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+        }
+
+        .rules-column.must-do .rules-list li i { color: #10B981; }
+        .rules-column.must-avoid .rules-list li i { color: #EF4444; }
+
+        .rules-list li span strong {
+            color: var(--text-primary);
+        }
+
+        /* --- CORE PHILOSOPHY --- */
+        #philosophy {
+            padding: 6rem 0;
+        }
+
+        .quote-banner {
+            background: linear-gradient(135deg, rgba(8, 11, 23, 0.95) 0%, rgba(3, 4, 8, 0.95) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 6rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .quote-banner::before {
+            content: '“';
+            position: absolute;
+            top: 2rem;
+            left: 4rem;
+            font-size: 15rem;
+            font-family: 'Space Grotesk', sans-serif;
+            color: rgba(255, 255, 255, 0.02);
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .quote-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.2rem;
+            line-height: 1.1;
+            font-weight: 700;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(135deg, #ffffff 40%, var(--accent-blue) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .quote-subtext {
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--text-secondary);
+            position: relative;
+            z-index: 10;
+            line-height: 1.7;
+        }
+
+        /* --- FINAL OBJECTIVE (CLOSING) --- */
+        .closing-wrapper {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .outcome-pills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+        }
+
+        .outcome-pill {
+            background: rgba(255, 193, 7, 0.04);
+            border: 1px solid rgba(255, 193, 7, 0.15);
+            color: var(--accent-gold);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.03);
+            text-transform: uppercase;
+        }
+
+        .closing-text {
+            font-size: 1.35rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .closing-text strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .signature-box {
+            margin-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 2rem;
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .signature-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+        }
+
+        .signature-title {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 0;
+            background: #030409;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-logo span {
+            color: var(--accent-blue);
+        }
+
+        .footer-text {
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- ANIMATIONS KEYFRAMES --- */
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue);
+                transform: scale(0.95);
+            }
+            100% {
+                box-shadow: 0 0 15px var(--accent-blue), 0 0 25px var(--accent-blue);
+                transform: scale(1.05);
+            }
+        }
+
+        /* --- RESPONSIVE MEDIA QUERIES --- */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            .tech-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            .tech-column:last-child {
+                grid-column: span 2;
+            }
+            .revenue-wrapper {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .revenue-card {
+                max-width: 500px;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 5rem 0;
+            }
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .identity-title {
+                font-size: 2rem;
+                margin-bottom: 2.5rem;
+            }
+            .capabilities-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .capability-item {
+                width: 100%;
+            }
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+            .tech-column:last-child {
+                grid-column: span 1;
+            }
+            .weeks-grid {
+                grid-template-columns: 1fr;
+            }
+            .rules-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .quote-text {
+                font-size: 2rem;
+            }
+            .quote-banner {
+                padding: 4rem 2rem;
+            }
+            .closing-text {
+                font-size: 1.1rem;
+            }
+            
+            /* Mobile Navbar Hamburger styling */
+            .hamburger {
+                display: block;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: #070a13;
+                border-left: 1px solid var(--border-color);
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2.5rem;
+                transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                z-index: 105;
+            }
+            .nav-menu.open {
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- --- GLASSMORPHIC NAVBAR --- -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                MASTER PLAN <span class="logo-dot"></span>
+            </a>
+            
+            <button class="hamburger" id="hamburger-toggle" aria-label="Toggle Navigation">
+                <i data-lucide="menu" id="hamburger-icon" style="width: 26px; height: 26px;"></i>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu-list">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#summary" class="nav-link">Summary</a></li>
+                <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+                <li><a href="#monetization" class="nav-link">Monetization</a></li>
+                <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                <li><a href="#rules" class="nav-link">Rules</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- --- HERO SECTION --- -->
+    <section id="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="prepared-badge reveal">
+                <span class="prepared-dot"></span> Prepared For: Nagaraju
+            </div>
+            
+            <h1 class="hero-title reveal delay-1">
+                Master Plan<br>For Making Money
+            </h1>
+            
+            <p class="hero-subtitle reveal delay-2">
+                90-Day Income Acceleration Plan — <strong>₹50,000</strong> Outside Salary
+            </p>
+            
+            <div class="focus-tags reveal delay-2">
+                <span class="focus-pill"><i data-lucide="cpu"></i> AI Systems</span>
+                <span class="focus-pill"><i data-lucide="database"></i> Backend</span>
+                <span class="focus-pill"><i data-lucide="zap"></i> Automation</span>
+                <span class="focus-pill"><i data-lucide="briefcase"></i> Freelancing</span>
+            </div>
+            
+            <a href="#summary" class="btn-cta reveal delay-3">
+                View The Plan <i data-lucide="arrow-down" style="width: 20px; height: 20px;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- --- EXECUTIVE SUMMARY SECTION --- -->
+    <section id="summary">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Overview</span>
+                <h2 class="section-title">Executive <span>Summary</span></h2>
+            </div>
+            
+            <div class="summary-wrapper">
+                <p class="summary-intro reveal">
+                    A hyper-focused, execution-first blueprint engineered to build high-value systems, capture market demand, and generate an independent secondary income stream in 90 days. <span>No fluff. Just compounding systems.</span>
+                </p>
+                
+                <div class="summary-grid">
+                    <!-- Pillar 1 -->
+                    <div class="glass-card pillar-card reveal">
+                        <div class="pillar-icon-box">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3>AI Automation Systems</h3>
+                        <p>Construct visual workflow logic, automate outbound pipelines, and design conversational agents that solve concrete client inefficiencies.</p>
+                    </div>
+                    
+                    <!-- Pillar 2 -->
+                    <div class="glass-card pillar-card reveal delay-1">
+                        <div class="pillar-icon-box">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Spin up bulletproof API backends, webhooks, and database schemas that provide the architectural engines for any web application.</p>
+                    </div>
+                    
+                    <!-- Pillar 3 -->
+                    <div class="glass-card pillar-card reveal delay-2">
+                        <div class="pillar-icon-box">
+                            <i data-lucide="git-branch"></i>
+                        </div>
+                        <h3>Workflow Orchestration</h3>
+                        <p>Seamlessly weave third-party services, webhooks, CRMs, payment structures, and notifications into automated pipelines that execute tasks autonomously.</p>
+                    </div>
+                    
+                    <!-- Pillar 4 -->
+                    <div class="glass-card pillar-card reveal delay-3">
+                        <div class="pillar-icon-box">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <h3>Freelancing & Outreach</h3>
+                        <p>Productize developer capabilities into distinct services. Pitch with conviction using visible, hosted proof-of-work to convert cold leads into high-paying clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- STRATEGIC POSITIONING SECTION --- -->
+    <section id="positioning">
+        <div class="container">
+            <div class="identity-banner reveal">
+                <span class="identity-label">Core Identity</span>
+                <h2 class="identity-title">AI Workflow & Automation Systems Builder</h2>
+                
+                <div class="capabilities-list">
+                    <div class="capability-item">
+                        <i data-lucide="code-2"></i>
+                        <span>Custom API Architectures</span>
+                    </div>
+                    <div class="capability-item">
+                        <i data-lucide="bot"></i>
+                        <span>Autonomous Agent Systems</span>
+                    </div>
+                    <div class="capability-item">
+                        <i data-lucide="shuffle"></i>
+                        <span>Enterprise Workflow Design</span>
+                    </div>
+                    <div class="capability-item">
+                        <i data-lucide="layout-dashboard"></i>
+                        <span>Visual Analytics Dashboards</span>
+                    </div>
+                    <div class="capability-item">
+                        <i data-lucide="trending-up"></i>
+                        <span>High-Velocity Client Acquisition</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- TECH STACK SECTION --- -->
+    <section id="tech">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Weapons of Choice</span>
+                <h2 class="section-title">The <span>Tech Stack</span></h2>
+            </div>
+            
+            <div class="tech-grid">
+                <!-- Column 1 -->
+                <div class="glass-card tech-column backend reveal">
+                    <h3><i data-lucide="database"></i> Backend</h3>
+                    <div class="tech-badges-wrapper">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">REST APIs</span>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="glass-card tech-column ai reveal delay-1">
+                    <h3><i data-lucide="bot"></i> AI & Automation</h3>
+                    <div class="tech-badges-wrapper">
+                        <span class="tech-badge">n8n</span>
+                        <span class="tech-badge">Make.com</span>
+                        <span class="tech-badge">LangChain</span>
+                        <span class="tech-badge">OpenAI API</span>
+                        <span class="tech-badge">Anthropic API</span>
+                        <span class="tech-badge">Vector DBs</span>
+                        <span class="tech-badge">Cursor / LLMs</span>
+                    </div>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="glass-card tech-column deployment reveal delay-2">
+                    <h3><i data-lucide="terminal"></i> Deployment & Tools</h3>
+                    <div class="tech-badges-wrapper">
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">Vercel</span>
+                        <span class="tech-badge">Supabase</span>
+                        <span class="tech-badge">Git / GitHub</span>
+                        <span class="tech-badge">Postman</span>
+                        <span class="tech-badge">Stripe API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- MONETIZATION STRATEGY SECTION --- -->
+    <section id="monetization">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Offer Suite</span>
+                <h2 class="section-title">Monetization <span>Strategy</span></h2>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Service 1 -->
+                <div class="glass-card pricing-card reveal">
+                    <div class="pricing-header">
+                        <h3>AI Chatbot Setup</h3>
+                        <div class="pricing-range">₹5K–₹15K <span>/ project</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="check"><i data-lucide="check-circle-2"></i> Custom Knowledge Bases (PDF/Web)</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Platform Embeds (WhatsApp/Web)</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Capturing & Storing Leads</li>
+                        <li class="cross"><i data-lucide="x-circle"></i> Custom CRM syncing</li>
+                        <li class="cross"><i data-lucide="x-circle"></i> Retainer Support Plans</li>
+                    </ul>
+                    <button class="btn-pricing">Select Offer Structure</button>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="glass-card pricing-card reveal delay-1">
+                    <div class="pricing-header">
+                        <h3>Workflow Automation</h3>
+                        <div class="pricing-range">₹10K–₹25K <span>/ project</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="check"><i data-lucide="check-circle-2"></i> Multi-step API Orchestration</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Email, Sheets & CRM Pipelines</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Stripe Integration & Webhooks</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Error Monitoring Systems</li>
+                        <li class="cross"><i data-lucide="x-circle"></i> Advanced Custom Dashboards</li>
+                    </ul>
+                    <button class="btn-pricing">Select Offer Structure</button>
+                </div>
+                
+                <!-- Service 3 (HIGH TIER HIGHLIGHT) -->
+                <div class="glass-card pricing-card premium reveal delay-2">
+                    <span class="tier-tag">HIGHEST VALUE</span>
+                    <div class="pricing-header">
+                        <h3>Backend Dashboard</h3>
+                        <div class="pricing-range">₹15K–₹30K <span>/ project</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="check"><i data-lucide="check-circle-2"></i> Secure Authentication (OAuth/JWT)</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Custom FastAPI / Express Server</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Visual Analytics & Admin Layouts</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Complex PostgreSQL Schema Setup</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Retainer Maintenance Eligible</li>
+                    </ul>
+                    <button class="btn-pricing">Select Offer Structure</button>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="glass-card pricing-card reveal delay-3">
+                    <div class="pricing-header">
+                        <h3>API Integration</h3>
+                        <div class="pricing-range">₹5K–₹20K <span>/ project</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="check"><i data-lucide="check-circle-2"></i> Legacy Database Connector Sync</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Third-party API Bridges</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Secure Webhook Receivers</li>
+                        <li class="check"><i data-lucide="check-circle-2"></i> Comprehensive API Docs (Swagger)</li>
+                        <li class="cross"><i data-lucide="x-circle"></i> Frontend Dashboard UI</li>
+                    </ul>
+                    <button class="btn-pricing">Select Offer Structure</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 90-DAY ROADMAP (TIMELINE) SECTION --- -->
+    <section id="roadmap">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Execution Schedule</span>
+                <h2 class="section-title">90-Day <span>Roadmap</span></h2>
+            </div>
+            
+            <div class="roadmap-container reveal">
+                <div class="roadmap-timeline">
+                    
+                    <!-- Phase 1 -->
+                    <div class="phase-block phase-1 active">
+                        <div class="phase-header" onclick="togglePhase(this)">
+                            <div class="phase-indicator">1</div>
+                            <div class="phase-title-group">
+                                <div class="phase-meta">Month 1</div>
+                                <div class="phase-name">Phase 1: Foundation & Portfolio</div>
+                            </div>
+                            <i data-lucide="chevron-down" class="phase-chevron"></i>
+                        </div>
+                        
+                        <div class="phase-content" style="max-height: 2000px;">
+                            <div class="phase-content-inner">
+                                <div class="phase-objective">
+                                    <strong>Objective:</strong> Establish undeniable, hosted <strong>"Proof of Work"</strong> to remove all friction from sales calls.
+                                </div>
+                                <div class="weeks-grid">
+                                    <div class="week-card">
+                                        <div class="week-title"><i data-lucide="calendar"></i> Weeks 1-2</div>
+                                        <ul class="week-tasks">
+                                            <li><i data-lucide="play"></i> Build an advanced autonomous lead scraper in n8n.</li>
+                                            <li><i data-lucide="play"></i> Architect a FastAPI microservice backend with Stripe checkout.</li>
+                                            <li><i data-lucide="play"></i> Create a customizable OpenAI chatbot with vector database storage.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="week-card">
+                                        <div class="week-title"><i data-lucide="calendar"></i> Weeks 3-4</div>
+                                        <ul class="week-tasks">
+                                            <li><i data-lucide="play"></i> Build and deploy a premium personal portfolio website.</li>
+                                            <li><i data-lucide="play"></i> Embed interactive live-demos of all built automation systems.</li>
+                                            <li><i data-lucide="play"></i> Record 2-minute video walkthroughs explaining the architectures.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 2 -->
+                    <div class="phase-block phase-2">
+                        <div class="phase-header" onclick="togglePhase(this)">
+                            <div class="phase-indicator">2</div>
+                            <div class="phase-title-group">
+                                <div class="phase-meta">Month 2</div>
+                                <div class="phase-name">Phase 2: Client Acquisition</div>
+                            </div>
+                            <i data-lucide="chevron-down" class="phase-chevron"></i>
+                        </div>
+                        
+                        <div class="phase-content">
+                            <div class="phase-content-inner">
+                                <div class="phase-objective">
+                                    <strong>Objective:</strong> Secure the first <strong>2 paid projects</strong> through hyper-personalized, high-volume outbound efforts.
+                                </div>
+                                <div class="weeks-grid">
+                                    <div class="week-card">
+                                        <div class="week-title"><i data-lucide="calendar"></i> Weeks 5-6</div>
+                                        <ul class="week-tasks">
+                                            <li><i data-lucide="play"></i> Build highly curated outreach lists (CEOs, Agency Founders, E-commerce leads).</li>
+                                            <li><i data-lucide="play"></i> Launch personalized outbound campaigns (5 direct pitches/day via LinkedIn/Email).</li>
+                                            <li><i data-lucide="play"></i> Pitch using recorded portfolio video clips matching client pain points.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="week-card">
+                                        <div class="week-title"><i data-lucide="calendar"></i> Weeks 7-8</div>
+                                        <ul class="week-tasks">
+                                            <li><i data-lucide="play"></i> Set up profiles on Freelancing portals (Upwork, Freelancer) with portfolio links.</li>
+                                            <li><i data-lucide="play"></i> Apply to 3 high-intent projects daily with customized proposals.</li>
+                                            <li><i data-lucide="play"></i> Pitch low-risk paid audits (₹2,500) that convert into full setups.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 3 -->
+                    <div class="phase-block phase-3">
+                        <div class="phase-header" onclick="togglePhase(this)">
+                            <div class="phase-indicator">3</div>
+                            <div class="phase-title-group">
+                                <div class="phase-meta">Month 3</div>
+                                <div class="phase-name">Phase 3: Scaling & Revenue</div>
+                            </div>
+                            <i data-lucide="chevron-down" class="phase-chevron"></i>
+                        </div>
+                        
+                        <div class="phase-content">
+                            <div class="phase-content-inner">
+                                <div class="phase-objective">
+                                    <strong>Objective:</strong> Push overall earnings past the <strong>₹50,000</strong> mark and lay down recurring pipeline.
+                                </div>
+                                <div class="weeks-grid">
+                                    <div class="week-card">
+                                        <div class="week-title"><i data-lucide="calendar"></i> Weeks 9-10</div>
+                                        <ul class="week-tasks">
+                                            <li><i data-lucide="play"></i> Deliver secured projects with exceptional speed and documentation.</li>
+                                            <li><i data-lucide="play"></i> Upsell clients to monthly retainer structures for maintenance & updates.</li>
+                                            <li><i data-lucide="play"></i> Request video testimonials and referrals from happy clients.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="week-card">
+                                        <div class="week-title"><i data-lucide="calendar"></i> Weeks 11-12</div>
+                                        <ul class="week-tasks">
+                                            <li><i data-lucide="play"></i> Productize most frequent automation setups into fixed-price packages.</li>
+                                            <li><i data-lucide="play"></i> Automate outbound acquisition scripts running fully in the background.</li>
+                                            <li><i data-lucide="play"></i> Transition focus from one-off setups to scalable corporate integrations.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- REVENUE BREAKDOWN SECTION --- -->
+    <section id="breakdown">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Financial Model</span>
+                <h2 class="section-title">Revenue <span>Breakdown</span></h2>
+            </div>
+            
+            <div class="revenue-wrapper">
+                <!-- Progress Bars Chart -->
+                <div class="revenue-charts reveal">
+                    <!-- Bar 1 -->
+                    <div class="bar-group">
+                        <div class="bar-label-group">
+                            <span class="bar-label">AI Chatbot setups (1 x ₹10K)</span>
+                            <span class="bar-value">₹10,000</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-width="20%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bar 2 -->
+                    <div class="bar-group">
+                        <div class="bar-label-group">
+                            <span class="bar-label">Workflow Automation (1 x ₹15K)</span>
+                            <span class="bar-value">₹15,000</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-width="30%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bar 3 -->
+                    <div class="bar-group">
+                        <div class="bar-label-group">
+                            <span class="bar-label">Backend Dashboard (1 x ₹20K)</span>
+                            <span class="bar-value">₹20,000</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-width="40%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bar 4 -->
+                    <div class="bar-group">
+                        <div class="bar-label-group">
+                            <span class="bar-label">Small Integrations / Audits (2 x ₹2.5K)</span>
+                            <span class="bar-value">₹5,000</span>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-width="10%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stat Card Callout -->
+                <div class="revenue-card reveal delay-1">
+                    <div class="revenue-card-title">Target Monthly Revenue</div>
+                    <div class="revenue-card-amount">₹50,000</div>
+                    <div class="revenue-card-subtitle">Outside Full-Time Salary</div>
+                    <div class="revenue-indicator">
+                        <i data-lucide="trending-up" style="width: 16px; height: 16px;"></i> High Margin Service Arbitrage
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- NON-NEGOTIABLE RULES SECTION --- -->
+    <section id="rules">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Execution Guardrails</span>
+                <h2 class="section-title">Non-Negotiable <span>Rules</span></h2>
+            </div>
+            
+            <div class="rules-grid">
+                <!-- Column 1: MUST DO -->
+                <div class="rules-column must-do reveal">
+                    <h3><i data-lucide="check-circle-2"></i> ✅ MUST DO</h3>
+                    <ul class="rules-list">
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span>Dedicate <strong>2 hours of focused, deep-work</strong> execution daily, without exception.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span>Ship at least <strong>1 public GitHub repository or hosted demo</strong> per week.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span>Send <strong>5 highly customized cold pitches</strong> every weekday to pre-qualified leads.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span><strong>Document your build process</strong> and share systems value publicly (LinkedIn / X).</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: MUST AVOID -->
+                <div class="rules-column must-avoid reveal delay-1">
+                    <h3><i data-lucide="x-circle"></i> ❌ MUST AVOID</h3>
+                    <ul class="rules-list">
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span>Do not get trapped in <strong>Tutorial Hell</strong>—build, break, and debug real systems.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span><strong>Never negotiate your rates down</strong> below minimum sustainable standards; select clients carefully.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span>Avoid spending hours on admin chores—<strong>prioritize building and pitching</strong> daily.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="arrow-right"></i>
+                            <span><strong>Do not break consistency.</strong> Never skip execution for two consecutive days under any circumstance.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- CORE PHILOSOPHY SECTION --- -->
+    <section id="philosophy">
+        <div class="container">
+            <div class="quote-banner reveal">
+                <div class="quote-text">
+                    "Motivation fades. Systems compound."
+                </div>
+                <p class="quote-subtext">
+                    Success depends on consistency, execution, visible proof-of-work, and market relevance. Long-term goals are won in daily focused blocks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FINAL OBJECTIVE SECTION --- -->
+    <section id="objective">
+        <div class="container">
+            <div class="closing-wrapper reveal">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <span class="section-subtitle">Ultimate Target</span>
+                    <h2 class="section-title">The Final <span>Objective</span></h2>
+                </div>
+                
+                <div class="outcome-pills">
+                    <span class="outcome-pill">Financially Independent</span>
+                    <span class="outcome-pill">Technically Strong</span>
+                    <span class="outcome-pill">Market Validated</span>
+                    <span class="outcome-pill">Highly Adaptable</span>
+                    <span class="outcome-pill">AI Systems Positioned</span>
+                </div>
+                
+                <p class="closing-text">
+                    This plan is not just about the <strong>₹50,000</strong>. It is about building the systems, confidence, and portfolio necessary to command <strong>long-term asymmetric career upside</strong>. Execute with urgency.
+                </p>
+                
+                <div class="signature-box">
+                    <div class="signature-name">NAGARAJU</div>
+                    <div class="signature-title">Systems & Backend Builder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                MASTER PLAN <span>FOR MAKING MONEY</span>
+            </div>
+            <p class="footer-text">&copy; 2026. Custom Engineered Income Blueprint.</p>
+            <p style="color: var(--text-muted); font-size: 0.75rem;">Build with HTML, Vanilla CSS, & JS. Zero Bloat.</p>
+        </div>
+    </footer>
+
+    <!-- --- JAVASCRIPT LOGIC --- -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Nav Hamburger Toggle
+        const hamburgerBtn = document.getElementById('hamburger-toggle');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navMenuList = document.getElementById('nav-menu-list');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = navMenuList.classList.toggle('open');
+            // Toggle icon between menu and x
+            hamburgerBtn.innerHTML = isOpen 
+                ? '<i data-lucide="x" style="width: 26px; height: 26px;"></i>' 
+                : '<i data-lucide="menu" style="width: 26px; height: 26px;"></i>';
+            lucide.createIcons();
+        });
+
+        // Close Mobile Menu on Nav link clicks
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenuList.classList.contains('open')) {
+                    navMenuList.classList.remove('open');
+                    hamburgerBtn.innerHTML = '<i data-lucide="menu" style="width: 26px; height: 26px;"></i>';
+                    lucide.createIcons();
+                }
+            });
+        });
+
+        // Sticky Navbar styling on scroll
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            highlightActiveLink();
+        });
+
+        // Active Link Highlighting based on scroll position
+        const sections = document.querySelectorAll('section');
+        function highlightActiveLink() {
+            let scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        // Expandable Roadmap Timelines
+        function togglePhase(headerElement) {
+            const parentBlock = headerElement.parentElement;
+            const content = parentBlock.querySelector('.phase-content');
+            const isActive = parentBlock.classList.contains('active');
+            
+            // Collapse all other phases
+            document.querySelectorAll('.phase-block').forEach(block => {
+                block.classList.remove('active');
+                block.querySelector('.phase-content').style.maxHeight = null;
+            });
+            
+            if (!isActive) {
+                parentBlock.classList.add('active');
+                // Set max-height to the scrollHeight so it animate smoothly
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+
+        // Mouse Move Glow Effect on cards
+        const glassCards = document.querySelectorAll('.glass-card');
+        glassCards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Viewport Entry Reveal System (IntersectionObserver)
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Revenue progress bar triggers
+        const revenueSection = document.getElementById('breakdown');
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.bar-fill').forEach(fill => {
+                        const width = fill.getAttribute('data-width');
+                        fill.style.width = width;
+                    });
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        if (revenueSection) {
+            barObserver.observe(revenueSection);
+        }
+    </script>
+</body>
+</html>
